@@ -1,0 +1,19 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lxf.study.mybatis.mapper.MybatisUserMapper">
+
+    <insert id="insertOne" parameterType="MybatisUser">
+        insert into mybatis_user values(
+        #{user.id},
+        #{user.userName},
+        #{user.password},
+        #{user.email},
+        #{user.gender},
+        #{user.age},
+        #{user.createTime}
+        );
+    </insert>
+
+</mapper>

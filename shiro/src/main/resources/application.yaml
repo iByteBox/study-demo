@@ -1,0 +1,22 @@
+server:
+  port: 9000
+debug: false
+
+shiro:
+  web:
+    enabled: true
+  loginUrl: "/login"
+  unauthorizedUrl: "/notAuth"
+
+logging:
+  level:
+    org.apache.shiro: debug
+
+spring:
+  redis:
+    host: localhost
+    port: 6379
+    database: 1
+
+
+
